@@ -15,12 +15,55 @@
   padding: 15px;
 }
 
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
 
-.conteinerTwo, .projects{
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: #444;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.conteinerTwo, .projec{
 display: flex;
 justify-content: center;
-
 }
 
 .headTwo{
@@ -81,7 +124,6 @@ justify-content:center;
 color:#fff9b2;
 font-family: "Oswald", sans-serif;
 }
-
 
 
 label{
@@ -184,25 +226,6 @@ font-size: 20px;
 transition: all 1s ease-in;
 }
 
-.one{
-  background-image: url('091345');
-}
-
-.two{
-  background-image: url('');
-}
-
-.three {
-  background-image: url('');
-}
-
-.four{
-  background-image: url('');
-}
-
-.five{
-background-image: url('');
-}
 
 
 @media all and (max-width: 500px){
